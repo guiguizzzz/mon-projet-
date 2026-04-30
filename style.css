@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+
+[data-testid="stFileUploader"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[data-testid="stFileUploader"] label {
+    text-align: center;
+    width: 100%;
+}
+
+.stButton > button {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+div[data-testid="stRadio"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div[data-testid="stRadio"] > label {
+    text-align: center;
+}
