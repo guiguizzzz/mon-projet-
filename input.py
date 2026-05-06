@@ -2,6 +2,18 @@
 import json
 from pathlib import Path
 
+
+def import_json(file):
+    """Importe un fichier JSON envoyé par Streamlit."""
+    if file is None:
+        return None
+
+    try:
+        return json.load(file)
+    except json.JSONDecodeError:
+        raise ValueError("Le fichier importé n'est pas un JSON valide.")
+
+
 def input_text (path_1, path_2):
     """fonction d'extraction des données des fichiers jsons"""
     text1 = Path(path_1)
